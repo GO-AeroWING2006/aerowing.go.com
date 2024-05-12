@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Sign Up</title>
+  <style>
+    /* CSS for the overlay */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* CSS for the popup */
+    .popup {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Login Popup -->
+<div id="loginPopup" class="overlay">
+  <div class="popup">
+    <h2>Login</h2>
+    <form action="new.html" method="POST"> <!-- You need to specify the action and method for form submission -->
+      <label for="loginEmail">Email:</label>
+      <input type="email" id="loginEmail" name="loginEmail" required>
+      <label for="loginPassword">Password:</label>
+      <input type="password" id="loginPassword" name="loginPassword" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
+
+<!-- Sign Up Popup -->
+<div id="signupPopup" class="overlay">
+  <div class="popup">
+    <h2>Sign Up</h2>
+    <form action="new.html" method="POST"> <!-- You need to specify the action and method for form submission -->
+      <label for="signupName">Name:</label>
+      <input type="text" id="signupName" name="signupName">
+      <label for="signupEmail">Email:</label>
+      <input type="email" id="signupEmail" name="signupEmail" required>
+      <label for="signupPassword">Password:</label>
+      <input type="password" id="signupPassword" name="signupPassword" required>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</div>
+
+<!-- Button to trigger login popup -->
+<button onclick="document.getElementById('loginPopup').style.display='flex'">Login</button>
+
+<!-- Button to trigger sign up popup -->
+<button onclick="document.getElementById('signupPopup').style.display='flex'">Sign Up</button>
+
+</body>
+</html>
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="HTTPS//Brand/logo%^loading.AeroWING">
+        <img src="https://i.pinimg.com/originals/cf/c4/f3/cfc4f32dedccba0a196a9ee4d303f2db.gif"height="620"width="1370" alt="Brand Logo">
+    </div>
+
+    <script>
+        // After 7 seconds, redirect to aerowing.html
+        setTimeout(function() {
+            window.location.href = "AeroWING.html";
+        }, 3000); // 7 seconds
+    </script>
+</body>
+</html>
+<!-- #STYLE.CSS
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.splash-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+ -->
+<!-- {}LUNCH.JSON
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open BRAND LOGO AEROWING.HTML",
+            "file": "c:\\Users\\a\\Desktop\\BRAND LOGO AEROWING.HTML"
+        }
+    ]
+} -->
